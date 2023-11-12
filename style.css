@@ -311,20 +311,21 @@
 
 @media screen  and (max-width: 768px){
 
-  .card:hover{
-    transition: none;
-    transform: none;
-    box-shadow: none;
+  .card:focus{
+    transition: transform  200ms ease, box-shadow 200ms;
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 4px 0px #00000040;
+  
   }
 
-  .card{
+  /* .card{
     transition: transform  200ms ease, box-shadow 200ms ease;
     transform: translateY(0);
-  }
+  } */
   .card:active{
     transition:  box-shadow 200ms ease, transform 200ms;
-    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
-    transform: translateY(5px);
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
+  transform: translateY(2px);
   }
   .content{
     width: 90%;
@@ -357,15 +358,16 @@
 }
 
 @media screen and (max-width:425px){
-  .card:hover{
-    transition: none;
-    transform: none;
-    box-shadow: none;
+  .card:focus{
+    transition: transform  200ms ease, box-shadow 200ms;
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 4px 0px #00000040;
+  
   }
   .card:active{
     transition:  box-shadow 200ms ease, transform 200ms;
-    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
-    transform: translateY(5px);
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
+  transform: translateY(2px);
   }
   .title{
     text-align: left;
@@ -377,8 +379,8 @@
   
   .card{
     width: 343px;
-    transition: transform  200ms ease, box-shadow 200ms ease;
-    transform: translateY(0);
+    /* transition: transform  200ms ease, box-shadow 200ms ease;
+    transform: translateY(0); */
   }
   .header .content{
     flex-direction: column;
@@ -442,21 +444,22 @@
 
 @media screen and (max-width:375px) {
 
-  .card:hover{
-    transition: none;
-    transform: none;
-    box-shadow: none;
+  .card:focus{
+    transition: transform  200ms ease, box-shadow 200ms;
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 4px 0px #00000040;
+  
   }
 
-  .card{
+  /* .card{
     transition: transform  200ms ease, box-shadow 200ms ease;
     transform: translateY(0);
-  }
+  } */
 
   .card:active{
     transition:  box-shadow 200ms ease, transform 200ms;
     box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
-    transform: translateY(5px);
+    transform: translateY(2px);
   }
   
   .title{
