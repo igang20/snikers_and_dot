@@ -102,7 +102,7 @@
 }
 
 .card {
-  transition: transform  200ms ease, box-shadow 200ms;
+  transition: transform 200ms ease, box-shadow 200ms;
   transform: translateY(0);
   width: 364px;
   height: auto;
@@ -151,15 +151,14 @@
   line-height: normal;
 }
 
-.card:hover{
-  transition: transform  200ms ease, box-shadow 200ms;
+.card:hover {
+  transition: transform 200ms ease, box-shadow 200ms;
   transform: translateY(-10px);
   box-shadow: 0px 4px 4px 0px #00000040;
-
 }
 
-.card:active{
-  transition:  box-shadow 200ms ease, transform 200ms;
+.card:active {
+  transition: box-shadow 200ms ease, transform 200ms;
   box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
   transform: translateY(2px);
 }
@@ -174,49 +173,49 @@
 
 */
 
-.big_card img{
+.big_card img {
   width: 100%;
   height: auto;
 }
 
-.big_card{
+.big_card {
   height: auto;
   border-radius: 50px;
   padding: 48px;
-  background: var(--white-100, #FFF);
+  background: var(--white-100, #fff);
   margin-top: 32px;
 }
 
-.text_area{
+.text_area {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-top: 32px;
 }
 
-.big_sneaker_name{
+.big_sneaker_name {
   color: var(--black, #121723);
   font-family: Anonymous Pro;
-  font-size: 48px ;
+  font-size: 48px;
   font-style: normal;
   font-weight: 400;
 }
-.big_sneaker_rewriting{
+.big_sneaker_rewriting {
   color: var(--black, #121723);
   font-family: Anonymous Pro;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; 
+  line-height: 100%;
 }
 
-.sneaker_history{
+.sneaker_history {
   display: flex;
   flex-direction: row;
   column-gap: 32px;
 }
 
-.sneaker_text{
+.sneaker_text {
   width: 50%;
   color: var(--black, #121723);
   font-family: Anonymous Pro;
@@ -226,12 +225,12 @@
   line-height: 28px;
 }
 
-.sneaker_spec{
+.sneaker_spec {
   width: 50%;
   height: auto;
 }
 
-.about{
+.about {
   color: var(--black, #121723);
   font-family: Anonymous Pro;
   font-size: 30px;
@@ -241,14 +240,14 @@
   margin-bottom: 20px;
 }
 
-.specs hr{
+.specs hr {
   background: var(--black, #121723);
   width: 100%;
   margin: 0;
 }
 
-.spec{
-  display:flex;
+.spec {
+  display: flex;
   justify-content: space-between;
   color: var(--black, #121723);
   font-family: Anonymous Pro;
@@ -258,11 +257,11 @@
   line-height: normal;
 }
 
-.recomendations{
+.recomendations {
   margin: 48px 0 32px 0;
 }
 
-.recomendations h1{
+.recomendations h1 {
   color: var(--black, #121723);
   font-family: Anonymous Pro;
   font-size: 48px;
@@ -284,171 +283,162 @@
 */
 
 @media screen and (max-width: 1266px) {
-.cards{
-  justify-content: center;
-}
+  .cards {
+    justify-content: center;
+  }
 
-.title{
-  text-align: left;
-}
-  
+  .title {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  .cards{
+  .cards {
     display: flex;
     justify-content: center;
   }
-  
-  .title{
+
+  .title {
     text-align: left;
   }
 
-  .content{
+  .content {
     width: 90%;
   }
 }
 
-@media screen  and (max-width: 768px){
-
-  .card:focus{
-    transition: transform  200ms ease, box-shadow 200ms;
+@media screen and (max-width: 768px) {
+  .card:focus {
+    transition: transform 200ms ease, box-shadow 200ms;
     transform: translateY(-10px);
     box-shadow: 0px 4px 4px 0px #00000040;
-  
   }
 
-  /* .card{
-    transition: transform  200ms ease, box-shadow 200ms ease;
-    transform: translateY(0);
-  } */
-  .card:active{
-    transition:  box-shadow 200ms ease, transform 200ms;
-  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
-  transform: translateY(2px);
+  .sneaker_history {
+    flex-direction: column;
   }
-  .content{
+  .sneaker_spec {
+    width: 100%;
+    margin-top: 32px;
+  }
+  .sneaker_text {
+    width: 100%;
+  }
+
+  .card:active {
+    transition: box-shadow 200ms ease, transform 200ms;
+    box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
+    transform: translateY(2px);
+  }
+  .content {
     width: 90%;
   }
 
-  .title{
+  .title {
     font-size: 32px;
-
   }
-  
-  .footer{
-    height:195px;
+
+  .footer {
+    height: 195px;
     align-items: center;
-    
   }
 
-  .footer .footer-logo{
+  .footer .footer-logo {
     flex-direction: column;
-    
   }
 
   .header {
     height: 156px;
   }
 
-  .header .content{
+  .header .content {
     flex-direction: column;
     justify-content: center;
   }
 }
 
-@media screen and (max-width:425px){
-  .card:focus{
-    transition: transform  200ms ease, box-shadow 200ms;
+@media screen and (max-width: 425px) {
+  .card:focus {
+    transition: transform 200ms ease, box-shadow 200ms;
     transform: translateY(-10px);
     box-shadow: 0px 4px 4px 0px #00000040;
-  
   }
-  .card:active{
-    transition:  box-shadow 200ms ease, transform 200ms;
+  .card:active {
+    transition: box-shadow 200ms ease, transform 200ms;
     box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
     transform: translateY(2px);
   }
-  .title{
+  .title {
     text-align: left;
     font-size: 32px;
   }
   .header {
     height: 156px;
   }
-  
-  .card{
+
+  .card {
     width: 343px;
     /* transition: transform  200ms ease, box-shadow 200ms ease;
     transform: translateY(0); */
   }
-  .header .content{
+  .header .content {
     flex-direction: column;
     justify-content: center;
   }
 
-  .footer{
-    height:195px;
+  .footer {
+    height: 195px;
     align-items: center;
-    
   }
 
-  .footer .footer-logo{
+  .footer .footer-logo {
     flex-direction: column;
-    
-  }
-  
-  .big_card{
-    padding: 24px  ;
-    border-radius: 12px;
-    
   }
 
-  .sneaker_spec{
+  .big_card {
+    padding: 24px;
+    border-radius: 12px;
+  }
+
+  .sneaker_spec {
     width: 100%;
     margin-top: 32px;
   }
 
-  .sneaker_history{
+  .sneaker_history {
     flex-direction: column;
   }
 
-  .sneaker_text{
+  .sneaker_text {
     width: 100%;
   }
-  
-  .big_sneaker_name{
-    font-size: 32px ;   
+
+  .big_sneaker_name {
+    font-size: 32px;
   }
 
-  .big_sneaker_rewriting{
+  .big_sneaker_rewriting {
     font-size: 20px;
   }
 
-  .sneaker_text{
+  .sneaker_text {
     font-size: 16px;
-    
   }
 
-  .about{
+  .about {
     font-size: 24px;
   }
 
-  .spec{
+  .spec {
     font-size: 16px;
-    
   }
-
-
 }
 
-@media screen and (max-width:375px) {
-
-  .card:focus{
-    transition: transform  200ms ease, box-shadow 200ms;
+@media screen and (max-width: 375px) {
+  .card:focus {
+    transition: transform 200ms ease, box-shadow 200ms;
     transform: translateY(-10px);
     box-shadow: 0px 4px 4px 0px #00000040;
-  
   }
 
   /* .card{
@@ -456,20 +446,19 @@
     transform: translateY(0);
   } */
 
-  .card:active{
-    transition:  box-shadow 200ms ease, transform 200ms;
+  .card:active {
+    transition: box-shadow 200ms ease, transform 200ms;
     box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.5);
     transform: translateY(2px);
   }
-  
-  .title{
+
+  .title {
     font-family: "Anonymous Pro";
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
   }
-  
 }
 
 /* 
@@ -495,7 +484,6 @@ NORMALISE.CSS
 ************************************************************
 */
 
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -506,12 +494,12 @@ NORMALISE.CSS
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-ul{
+ul {
   padding: 0;
 }
 
@@ -545,9 +533,14 @@ main {
    * `article` contexts in Chrome, Firefox, and Safari.
    */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 2em;
-  margin:  0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -857,4 +850,3 @@ template {
 [hidden] {
   display: none;
 }
-
